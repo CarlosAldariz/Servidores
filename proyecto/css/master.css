@@ -1,0 +1,40 @@
+body { 
+    margin:0; 
+    padding: 0; 
+    background: url(../css/fondo.jpg); 
+    background-size: cover;
+    font-family:sans-serif; 
+    height: 100%; 
+} 
+
+.caixa { 
+width: 320px; 
+height: 420px; 
+background: #000; 
+color: #fff; 
+top: 25%; 
+left: 40%; 
+position: absolute; 
+box-sizing: border-box; 
+padding: 70px 30px;
+} 
+
+.caixa h1 { 
+    margin: 0; 
+    padding: 0 0 20px; 
+    text-align: center; 
+    font-size: 30px; 
+
+}
+
+.caixa label { 
+    margin: 0; 
+    padding: 0; 
+    font-weight: bold; 
+    display: block; 
+} 
+
+.caixa input { 
+    width:100%; 
+    margin-bottom: 20px;
+}
