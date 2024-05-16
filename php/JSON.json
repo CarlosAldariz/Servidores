@@ -1,0 +1,22 @@
+{
+    "productos": [
+      {
+        "Nombre": "sal fina",
+        "Descripcion": "de la muy buena",
+        "Peso": 1,
+        "Stock": 100,
+        "CodCat": 1,
+        "Precio": 59.99,
+        "Activo": true
+      },
+      {
+        "Nombre": "sal gorda",
+        "Descripcion": "de la buena",
+        "Peso": 0.5,
+        "Stock": 50,
+        "CodCat": 1,
+        "Precio": 29.99,
+        "Activo": true
+      }
+    ]
+  }
