@@ -1,0 +1,20 @@
+.input {
+    background-color: #000000;
+    max-width: 190px;
+    height: 20px;
+    padding: 10px; 
+    color: white;
+    /* text-align: center; */
+    border: 1px solid white;
+    border-radius: 5px;
+    /* box-shadow: 3px 3px 2px rgb(249, 255, 85); */
+  }
+  
+  .input:focus {
+    color: rgb(204, 0, 204);
+    background-color: black;
+    outline-color: rgb(204, 0, 204);
+    box-shadow: -3px -3px 15px rgb(204, 0, 204);
+    transition: .1s;
+    transition-property: box-shadow;
+  }

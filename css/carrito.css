@@ -1,0 +1,112 @@
+body {  
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif; 
+    background: url(fondo.jpg);  
+    background-size: cover;
+    
+}  
+
+.glow {
+    --glow-color: rgb(192, 111, 247);
+    --glow-spread-color: rgba(136, 18, 247, 0.781);
+    --enhanced-glow-color: rgb(188, 126, 247);
+    --btn-color: rgb(77, 22, 129);
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 1em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+   }
+   
+   .glow::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+   }
+   
+   .glow:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 2em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+   }
+   
+   .glow:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+           0 0 2.5em 2em var(--glow-spread-color),
+           inset 0 0 .5em .25em var(--glow-color);
+   }
+
+.btn {
+    padding: 1rem 2rem;
+    font-weight: 700;
+    background: rgb(134, 27, 235);
+    color: rgba(0, 0, 0, 0.644);
+    border-radius: .5rem;
+    border-bottom: 2px solid blueviolet;
+    border-right: 2px solid blueviolet;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    transition-duration: 1s;
+    transition-property: border-top, 
+       border-left, 
+       border-bottom,
+       border-right,
+       box-shadow;
+   }
+   
+   .btn:hover {
+    border-top: 2px solid blueviolet;
+    border-left: 2px solid blueviolet;
+    border-bottom: 2px solid rgb(238, 103, 238);
+    border-right: 2px solid rgb(238, 103, 238);
+    box-shadow: rgba(255, 9, 165, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px;
+   } 
+
+   table.styled-table {
+    --glow-color: rgb(186, 120, 248);
+    --glow-spread-color: rgba(156, 50, 255, 0.781);
+    --enhanced-glow-color: rgb(183, 113, 248);
+    --btn-color: rgb(82, 22, 138);
+    border: .25em solid var(--glow-color);
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+                0 0 4em 1em var(--glow-spread-color),
+                inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+  } 
+
+  
+table.styled-table thead th,
+table.styled-table tbody td {
+  border: 1px solid  rgb(153, 57, 243);
+}
